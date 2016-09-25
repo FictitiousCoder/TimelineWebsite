@@ -1,0 +1,263 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-align: center;
+    background-color: black;
+    
+}
+
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position:absolute;
+    top:0px;
+    width: 100%;
+    height: auto;
+    background-color:brown;
+    background-image: url(img/banner2.png);
+    background-size:contain;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    top: -30px;
+}
+
+#headline {
+    font-family: triforce;
+    font-size: 38px;
+    color: gold;
+}
+
+#loadingOverlay {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: fixed;
+    background-color: #191919;
+    z-index: 6;
+}
+
+#loadingOverlay img {
+    position: relative;
+    float: left;
+    left: 30%;
+    top: 20%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* ==========================================================================
+   Timeline
+   ========================================================================== */
+#timeline {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+#timelineSlider {
+    height: 800px;
+    width: 10px;
+    position: relative;
+    float: left;
+    left: 80px;
+    top: 10%;
+    color: gold;
+    background-color: bisque;
+    border-bottom: 2px;
+    border-top: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: darkgoldenrod;
+    border-style: inset;
+}
+
+.timelineElement {
+    position: relative;
+    right: 40px;
+    bottom: 35px;
+    width: 150px;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.timelineElement img {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.timelineElement h3 {
+    position: relative;
+    top: 65px;
+    left: 45px;
+    color: floralwhite;
+    font-family: triforce;
+    text-shadow: 2px 2px #6B3300;
+}
+
+#timelineBall {
+    position: absolute;
+    bottom: 680px;
+    left:  -25px;
+    width: 300px;
+    left:  -55px;
+}
+
+header .timelineElement .timelineSelected {
+    width: 225px;
+}
+
+/* ==========================================================================
+   Panels
+   ========================================================================== */
+.panel {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1080px;
+    height: 100vh;
+    background-color: brown;
+    background-size:cover;
+    overflow: hidden;
+    background-position: center; 
+}
+
+.panel img {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: 5%;
+    right: 14%;
+}
+
+.panel p {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    float: right;
+    clear: right;
+    top: 10%;
+    right: 1%;
+    color: white;
+    font-family: montserratRegular;
+    font-size: 18px;
+    line-height: 25px;
+    line-height: 140%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+38,000000+100&0+42,0.65+58 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 38%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.65) 58%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 38%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.65) 58%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 38%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.65) 58%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+    overflow: scroll;
+}
+
+#OoC {
+    background-image: url(img/OoT2.JPG);
+    border-top: 6px;
+    border-top-style: inset;
+    border-top-color: gold;
+}
+
+#MM {
+    background-image: url(img/MM.jpg);  
+}
+
+#WW {
+    background-image: url(img/WW.jpg);  
+}
+
+#TP {
+    background-image: url(img/TP.png);  
+}
+
+#SS {
+    background-image: url(img/SS.png);  
+}
+
+#BotW {
+    background-image: url(img/BotW.png);
+    background-position: left; 
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+    font-family: bigJohn;
+    src: url(fonts/BIG%20JOHN_0.otf);
+}
+
+@font-face {
+    font-family: slimJoe;
+    src: url(fonts/Slim%20Joe.otf);
+}
+
+@font-face {
+    font-family: nickainley;
+    src: url(fonts/Nickainley-Normal.otf);
+}
+
+@font-face {
+    font-family: slot;
+    src: url(fonts/Slot-Regular.otf);
+}
+
+@font-face {
+    font-family: leagueGothicRegular;
+    src: url(fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: accent;
+    src: url(fonts/accent.ttf);
+}
+
+@font-face {
+    font-family: manifesto;
+    src: url(fonts/MANIFESTO.ttf)
+}
+
+@font-face {
+    font-family: montserratRegular;
+    src: url(fonts/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: montserratBold;
+    src: url(fonts/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: fjordOne;
+    src: url(fonts/FjordOne-Regular.ttf)
+}
+
+@font-face {
+    font-family: triforce;
+    src: url(fonts/Triforce.ttf)
+}
